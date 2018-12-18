@@ -6,7 +6,7 @@ router.post('/message',async (req,res)=>{
     try{
         let {message} = req.body;
         const karixInstance =  new karix();
-        const data = await karixInstance.sendMessage(process.env.KARIX_FROM_NUMBER,["+919041168768"],message);
+        const data = await karixInstance.sendMessage(process.env.KARIX_FROM_NUMBER,["+919810153260"],message);
         res.send(data);
     }catch(e){
         console.log(e);
